@@ -8,9 +8,10 @@ spring:
       server:
         git:
           uri: https://github.com/stary1993/ordersystem.git
-          searchPath: config
           username: root
           password: root
+          search-paths:
+            - config
       label: master
 eureka:
   client:

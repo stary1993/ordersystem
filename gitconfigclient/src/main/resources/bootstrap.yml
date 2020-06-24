@@ -3,10 +3,9 @@ spring:
     config:
       name: client
       label: master
-      profile: dev
-      discovery:
-        enabled: true
-        service-id: gitconfigserver
+      profile: test
+      uri:
+        - http://localhost:8094
 eureka:
   client:
     service-url:

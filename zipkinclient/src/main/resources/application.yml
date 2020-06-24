@@ -1,0 +1,17 @@
+server:
+  port: 8096
+spring:
+  application:
+    name: zipkinclient
+  zipkin:
+    base-url: http://localhost:8095/
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0
+eureka:
+  client:
+    server-url:
+      dafaultZone: http://localhost:8088/eureka/
