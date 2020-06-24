@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/git")
 public class GitConfigClientController {
+
     @Value("${server.port}")
     private String port;
     @Value("${version}")

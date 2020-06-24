@@ -1,8 +1,9 @@
 spring:
   cloud:
     config:
-      name: configclient
+      name: client
       label: master
+      profile: dev
       discovery:
         enabled: true
         service-id: gitconfigserver
